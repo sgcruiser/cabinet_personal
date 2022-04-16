@@ -1,0 +1,40 @@
+@import '../../styles/shared.scss';
+
+.footer {
+  padding: 20px 0;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $text-secondary-color;
+}
+
+.developer {
+  margin: 0 5px;
+
+  text-transform: uppercase;
+
+  cursor: default;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: crimson;
+    font-weight: 500;
+
+    transition: color $transition-duration $timing-function;
+  }
+}
+
+.name {
+  margin-left: 5px;
+}

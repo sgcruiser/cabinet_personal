@@ -1,0 +1,44 @@
+@import '../../styles/shared.scss';
+
+.list {
+  display: flex;
+
+  margin-bottom: 15px;
+
+  @media screen and (min-width: $to-tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.link {
+  display: block;
+
+  font-weight: 500;
+  text-decoration: none;
+
+  color: $secondary-color;
+
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+    transition: color $transition-duration $timing-function;
+  }
+
+  &--active {
+    color: $main-color;
+
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $to-tablet) {
+    padding: 20px 0;
+  }
+}

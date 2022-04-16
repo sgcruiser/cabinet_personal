@@ -1,0 +1,40 @@
+@import '../../styles/shared.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: inline;
+  margin: 10px 0;
+
+  font-size: 1.5rem;
+
+  color: $main-color;
+
+  opacity: 1;
+  transition: opacity $transition-duration linear;
+
+  cursor: default;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    transition: opacity $transition-duration $timing-function;
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 2rem;
+  }
+}
+
+.appear {
+  transform: translateX(-61.8%);
+}
+
+.appearActive {
+  transform: translateX(38.2%);
+  transition: all 250ms ease-in-out;
+}

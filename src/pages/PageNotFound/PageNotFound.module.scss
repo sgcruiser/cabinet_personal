@@ -1,0 +1,54 @@
+@import '../../styles/shared.scss';
+
+.container {
+  text-align: center;
+}
+
+.thumb {
+  margin: 0 auto;
+
+  max-width: 200px;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 320px;
+  }
+}
+
+.image {
+  max-width: 90%;
+}
+
+.text {
+  margin-bottom: 15px;
+  color: $text-color;
+}
+
+.button {
+  min-width: 150px;
+  padding: 10px;
+
+  border: 0px solid transparent;
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  color: $text-secondary-color;
+  background-color: $main-color;
+
+  box-shadow: $main-shadow;
+
+  opacity: 1;
+  transition: opacity $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+
+    transition: opacity $transition-duration $timing-function;
+  }
+
+  &:disabled {
+    background-color: $inactive-color;
+    cursor: auto;
+  }
+}

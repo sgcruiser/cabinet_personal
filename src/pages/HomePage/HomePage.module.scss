@@ -1,0 +1,53 @@
+@import '../../styles/shared.scss';
+
+.container {
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.thumb {
+  margin: 0 auto 15px;
+
+  width: 200px;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.text {
+  margin-bottom: 25px;
+  color: $text-color;
+}
+
+.button {
+  min-width: 150px;
+  padding: 10px;
+
+  border: 0px solid transparent;
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  color: $text-secondary-color;
+  background-color: $main-color;
+
+  box-shadow: $main-shadow;
+
+  opacity: 1;
+  transition: opacity $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+
+    transition: opacity $transition-duration $timing-function;
+  }
+
+  &:disabled {
+    background-color: $inactive-color;
+    cursor: auto;
+  }
+}

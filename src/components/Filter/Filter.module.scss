@@ -1,0 +1,45 @@
+@import '../../styles/shared.scss';
+
+.container {
+  margin-bottom: 15px;
+}
+
+.title {
+  margin-bottom: 10px;
+
+  color: $main-color;
+
+  text-align: center;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: $secondary-color;
+}
+
+.text {
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  line-height: normal;
+
+  transition: all $transition-duration $timing-function;
+
+  &:focus {
+    outline: transparent;
+    border: 1px solid $main-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 350px;
+  }
+}

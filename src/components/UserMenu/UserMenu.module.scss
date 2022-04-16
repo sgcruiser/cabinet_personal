@@ -1,0 +1,70 @@
+@import '../../styles/shared.scss';
+
+.profile {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $to-tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.thumb {
+  width: 32px;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 100%;
+
+  border-radius: 50%;
+
+  opacity: 1;
+
+  transition: opacity $transition-duration $timing-function;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+
+    transition: opacity $transition-duration $timing-function;
+  }
+}
+
+.welcome {
+  margin-right: 10px;
+}
+
+.email {
+  font-weight: 500;
+  color: $text-color;
+}
+
+.button {
+  padding: 5px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+
+  color: $white-color;
+  background-color: $inactive-color;
+
+  box-shadow: $main-shadow;
+
+  opacity: 0.8;
+
+  transition: opacity $transition-duration $timing-function;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+    opacity: 1;
+
+    transition: opacity $transition-duration $timing-function;
+  }
+}
