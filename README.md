@@ -27,16 +27,12 @@
 
 ## Rest Api
 
----
-
 A ready-to-use live backend with documentation was used
 [по ссылке](https://connections-api.herokuapp.com/docs/).
 
 The REST API to the example app is described below.
 
 ## User
-
----
 
 ## User Registration
 
@@ -125,8 +121,6 @@ The REST API to the example app is described below.
         }
 
 ## Contacts
-
----
 
 ## Get List OF Contacts
 
