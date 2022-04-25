@@ -122,7 +122,7 @@ The REST API to the example app is described below.
 
 ## Contacts
 
-## Get List OF Contacts
+## Get List Of Contacts
 
 ### Request
 
